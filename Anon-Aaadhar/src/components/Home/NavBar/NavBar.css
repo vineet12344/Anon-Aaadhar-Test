@@ -1,0 +1,32 @@
+.container{
+    /* background-color: rgb(246, 0, 0); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    width: 100%;
+    font-size: larger;
+    /* border: 2px solid black; */
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.navElements{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    /* width: 120px; */
+    gap: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
