@@ -1,0 +1,44 @@
+.heroContainer{
+    display: flex;
+    gap: 50px;
+    margin-top: 150px;
+    height: auto;    
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 20px;
+}
+
+.left p{
+    font-size: x-large;
+}
+
+.left span{
+    height: 120px;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+p{
+    font-size: large;
+}
+
+@media (max-width: 671px) {
+    .heroContainer{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media (min-width: 671px) {
+    p{
+       font-size: small;
+    }
+}
