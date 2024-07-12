@@ -1,0 +1,93 @@
+/*h1{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.dropzone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 4px dashed rgb(123, 118, 97);
+    padding: 20px;
+    width: max-content;
+    box-shadow:rgba(19, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    
+}
+button{
+    margin: 12px;
+    padding: 12px;
+    font-size: medium;
+}
+.btn-cont{
+    padding: auto;
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    justify-content: center;
+}
+.sub{
+    margin-top: 10px;
+    background-color: aquamarine;
+
+}
+.mint{
+    background-color: aquamarine;
+
+}*/
+
+h1 {
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.dropzone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 4px dashed rgb(123, 118, 97);
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(19, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+    margin: 0 auto;
+}
+
+button {
+    margin: 12px;
+    padding: 12px;
+    font-size: medium;
+}
+
+.btn-cont {
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    justify-content: center;
+    padding: 0;
+}
+
+.sub, .mint {
+    margin-top: 10px;
+    background-color: aquamarine;
+}
+
+@media (min-width: 768px) {
+    .dropzone {
+        width: 70%;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 767px) {
+    .dropzone {
+        width: 90%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+    }
+}
