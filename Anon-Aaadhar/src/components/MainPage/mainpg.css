@@ -32,10 +32,15 @@
   height: fit-content;
   width: fit-content;
 }
+
+.largeFont{
+
+  font-size: 30px;
+}
+
 button {
   height: fit-content;
   width: fit-content;
-  font-size: 30px;
   padding: 10px 12px;
   border-radius: 30px;
   background-color: cadetblue;

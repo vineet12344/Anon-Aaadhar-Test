@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import Button from "../../Button/Button";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -16,7 +17,9 @@ function Hero() {
             repellendus incidunt soluta, non dolorem minus aperiam amet!
           </p>
           <span>
-            <Button text={"Get Started"} colour={"blue"} />
+            <Link to={'/mainPage'}>
+              <Button text={"Get Started"} colour={"blue"} />
+            </Link>
           </span>
         </div>
         <div className="right">
