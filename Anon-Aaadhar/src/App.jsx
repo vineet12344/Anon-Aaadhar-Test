@@ -8,9 +8,12 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Mainpg />} /> {/* Use capital letter for component */}
+        {/* <Route path='/' element={<Mainpg />} /> Use capital letter for component */}
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
