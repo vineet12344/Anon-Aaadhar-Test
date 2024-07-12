@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+body{
+    font-family: 'Comic Neue';
+}
+.profile-card {
+    padding: 70px;
+    margin: 10px 10px 50px 10px;
+    display: flex;
+    background: #EFEFEF;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* flex-wrap: wrap; */
+}
+
+.space {
+    padding: 10px;
+}
+
+.profile-img {
+    
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    background: #EFEFEF;
+    padding: 20px;
+    margin: 40px 10px;
+    align-items: flex-start;
+}
+
+.pinfo {
+    margin: 20px;
+    padding: 20px;
+    background: #EFEFEF;
+    flex-grow: 1;
+}
+
+.info-item {
+    background-color: inherit;
+    padding: 20px;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    margin: 40px 10px;
+    background-color: #AEDACA;
+}
+
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .profile-img {
+        margin: 0 0 20px 0;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 40px 10px 0 10px;
+    }
+}
+
+.head{
+    background-color: inherit;
+    font-size:50px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.head1{
+    background-color: inherit;
+    font-size:50px;
+    font-weight: bold;
+    margin: 30px;
+    color: rgb(209, 182, 222);
+}
+
+
+
+.comic-neue-light {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .comic-neue-regular {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .comic-neue-bold {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .comic-neue-light-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .comic-neue-regular-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .comic-neue-bold-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
