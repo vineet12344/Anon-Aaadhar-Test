@@ -25,7 +25,7 @@ function Hero() {
         <div className="right">
           <img
             src="/src/assets/homepage.png"
-            style={{ width: "500px", height: "500px" }}
+            style={{ width: "550px", height: "650px" }}
             alt="homepage"
           />
         </div>

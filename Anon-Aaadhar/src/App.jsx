@@ -15,7 +15,13 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<Mainpg />} /> {/* Use capital letter for component */}
+
+        <Route path='/' element={<Home />} /> {/* Use capital letter for component */}
+        <Route path='/mainpage' element={< Mainpg/>} /> Use capital letter for component
+        <Route path='/FormPage' element={< FormPage/>} /> {/* Use capital letter for component */}
+        <Route path='/DragDrop' element={< DragDrop/>} /> {/* Use capital letter for component */}
+        <Route path='Profile' element={<Profile />} /> {/* Use capital letter for component */}
+
       </Routes>
     </Router>
     // <DragDrop/>
@@ -23,5 +29,3 @@ function App() {
 }
 
 export default App;
-
-
