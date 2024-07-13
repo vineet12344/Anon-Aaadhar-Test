@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../Home/NavBar/NavBar';
+import NavBar2 from '../MainPage/NavBar2';
 import './profile.css';
 import img from '../Profile/Pimg.png';
 // import Button from "../Button/Button";
@@ -7,7 +7,7 @@ import img from '../Profile/Pimg.png';
 const profile = () => {
     return (
         <>
-            <NavBar />
+            <NavBar2 />
             <div className='space'></div>
 
             <div className='profile-card'>

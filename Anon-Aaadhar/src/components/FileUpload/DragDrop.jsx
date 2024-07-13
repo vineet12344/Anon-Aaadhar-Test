@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useState } from "react";
 import "./DragDrop.css";
-import NavBar from "../Home/NavBar/NavBar";
+import NavBar2 from '../MainPage/NavBar2';
 
 const DragDrop = () => {
   const [files, setFiles] = useState(null);
@@ -17,7 +17,7 @@ const DragDrop = () => {
   };
   return (
     <>
-      <NavBar />
+      <NavBar2 />
       {!files && (
         <div
           className="dropzone"
