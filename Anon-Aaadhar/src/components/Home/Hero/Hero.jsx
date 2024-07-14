@@ -8,6 +8,8 @@ function Hero() {
     <>
       <div className="heroContainer">
         <div className="left">
+          <div className="lcont">
+
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur, soluta. Illo ex ipsa quasi incidunt rerum, molestiae
@@ -21,7 +23,33 @@ function Hero() {
               <Button text={"Get Started"} colour={"blue"} />
             </Link>
           </span>
+
+          </div>
+          
+
+          {/* <div class="ag-format-container">
+   <div class="ag-courses_box">
+    <div class="ag-courses_item">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+        <div class="ag-courses-item_title">
+          UI/Web&amp;Graph design for teenagers 11-17&#160;years old
         </div>
+        <div class="ag-courses-item_date-box">
+          
+          <span class="ag-courses-item_date">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, cupiditate praesentium tempore molestias voluptates optio totam. Reprehenderit officiis amet tempora fugiat mollitia aut minus alias deleniti! Expedita sunt quaerat culpa!
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div> */}
+
+
+        </div>
+
+
         <div className="right">
           <img
             src="/src/assets/homepage.png"
