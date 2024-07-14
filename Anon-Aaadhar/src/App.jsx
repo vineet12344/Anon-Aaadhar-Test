@@ -9,7 +9,7 @@ import { AnonAadhaarProvider } from '@anon-aadhaar/react';
 
 function App() {
   return (
-    <AnonAadhaarProvider>
+    <AnonAadhaarProvider _fetchArtifactsFromServer={true}>
       <Router>
         <Routes>
           <Route path='/' element={<Home />} /> {/* Use capital letter for component */}

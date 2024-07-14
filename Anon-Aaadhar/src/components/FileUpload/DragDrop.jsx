@@ -1,18 +1,18 @@
-
 import React, { useRef, useState, useEffect } from "react";
 import { AnonAadhaarProof, LogInWithAnonAadhaar, useAnonAadhaar } from "@anon-aadhaar/react";
 import "./DragDrop.css";
 import NavBar2 from '../MainPage/NavBar2';
 
 const DragDrop = () => {
+debugger
+
   const [files, setFiles] = useState(null);
   const inputRef = useRef();
   const [anonAadhaar] = useAnonAadhaar();
 
-  // const seed = 188215933815421822754175153135772413169103;
-
   useEffect(() => {
     console.log("Anon Aadhaar status: ", anonAadhaar.status);
+    console.log("Anon Aadhaar proof: ", anonAadhaar.anonAadhaarProofs);
   }, [anonAadhaar]);
 
   const handleDragOver = (event) => { 
@@ -37,7 +37,7 @@ const DragDrop = () => {
           <h1>Or</h1>
           <input
             type="file"
-            multiple
+            multiple={false}
             onChange={(event) => setFiles(event.target.files)}
             hidden
             ref={inputRef}
@@ -49,23 +49,25 @@ const DragDrop = () => {
         <button className="sub">Submit To IPFS</button>
         <button className="mint">Mint NFT</button>
       </div>
+      
       <LogInWithAnonAadhaar
-        nullifierSeed={12345}
+        nullifierSeed={1234}
         fieldsToReveal={[
-          "revealAgeAbove18",
-          "revealPinCode",
+          "revealAgeAbove18",,
           "revealGender",
           "revealPinCode",
         ]}
         useTestAadhaar={true}
+        
       />
       <p>{anonAadhaar?.status}</p>
       <div>
-        {anonAadhaar?.status === "logged-in" && (
+        {anonAadhaar?.status === "logged-in" && anonAadhaar?.anonAadhaarProofs && (
           <>
-            <p>✅ Proof is valid</p>
+            <p>Proof is valid</p>
             <AnonAadhaarProof
-              code={JSON.stringify(anonAadhaar.anonAadhaarProofs, null, 2)}
+            
+              code={(anonAadhaar.anonAadhaarProofs, null, 2)}
             />
           </>
         )}
@@ -75,4 +77,3 @@ const DragDrop = () => {
 };
 
 export default DragDrop;
-
