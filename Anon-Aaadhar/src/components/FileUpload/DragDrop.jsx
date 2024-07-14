@@ -33,7 +33,7 @@ const DragDrop = () => {
         Steps
       </h2>
       <p>
-        <h3>1]Generate QR code for you Aadhar</h3>
+        <h3>1]Generate QR code for your Aadhar</h3>
         <h3>2]Upload the Generated QR </h3>
         <h3>3]Press on continue</h3>
         <h3>4]</h3>
